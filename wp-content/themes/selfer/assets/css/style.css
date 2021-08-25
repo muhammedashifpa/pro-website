@@ -120,7 +120,17 @@ h1, h2, h3, h4, h5 {
 .ts-h6 {
     font-size: 1rem;
 }
-
+@media(max-width:280px){
+#main-title{
+    font-size: 35px;
+}
+}
+#service-div{
+    height: 50px;
+}
+#myskillsdic{
+    height: 50px;
+}
 /* NEW */
 
 /***********************************************************************************************************************
@@ -1963,7 +1973,7 @@ iframe div {
     background-color: transparent;
     border-radius: 0;
     height: 2.25rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1    rem;
     position: relative;
     overflow: visible;
 }
