@@ -131,6 +131,15 @@ h1, h2, h3, h4, h5 {
 #myskillsdic{
     height: 50px;
 }
+.contact-align{
+    text-align: center;
+}
+.invalid-box{
+    color: red;
+    float: right;
+    font-size: 10px;
+}
+
 /* NEW */
 
 /***********************************************************************************************************************
