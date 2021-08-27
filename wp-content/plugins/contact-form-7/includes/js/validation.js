@@ -206,21 +206,26 @@ $('#InputMessage').blur(function(){
 /*================== Ajax ==================*/
 $("#gform").submit((e)=>{
   e.preventDefault()
+  var info = [];
   if(!nameState){
     $('#nameLabel').css("color", "red");
-    $("#invalid-name-span").show()
+    $("#invalid-name-span").show();
+    info.push('enter name')
   }
   if(!numberState){
     $('#numberLabel').css("color", "red");
     $("#invalid-number-span").show()
+    info.push('enter number')
   }
   if(!emailState){
     $('#labelEmail').css("color", "red");
     $("#invalid-email-span").show()
+    info.push('enter email')
   }
   if(!messageState){ 
     $('#invalid-message-span').show();
     $('#labelMessage').css("color", "red");
+    info.push('enter message')
   }
   if(nameState&&numberState&&emailState&&messageState){
   $.ajax({
@@ -246,7 +251,7 @@ $("#gform").submit((e)=>{
   })
 }
 else{
-  alert('please fill the form\n')
+  alert(info)
   secNameTry = true;
   secEmailTry = true;
   secNumberTry = true;
