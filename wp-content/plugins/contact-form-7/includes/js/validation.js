@@ -241,7 +241,7 @@ $("#gform").submit((e)=>{
           //window.location.href="https://google.com"
       },
       error:function (err){
-          alert("Something Error")
+          alert("Something Error");
       }
   })
 }
