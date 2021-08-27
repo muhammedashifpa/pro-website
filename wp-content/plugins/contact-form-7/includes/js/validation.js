@@ -199,13 +199,11 @@ $('#InputMessage').blur(function(){
         messageState = false;
     }
 })
-
-
 /*========================================       submission      =======================================*/
 
 
 
-/*========================================       Ajax      =======================================*/
+/*================== Ajax ==================*/
 $("#gform").submit((e)=>{
   e.preventDefault()
   if(!nameState){
@@ -244,12 +242,11 @@ $("#gform").submit((e)=>{
       },
       error:function (err){
           alert("Something Error")
-
       }
   })
 }
 else{
-  alert('please fill the form')
+  alert('please fill the form\n')
   secNameTry = true;
   secEmailTry = true;
   secNumberTry = true;
