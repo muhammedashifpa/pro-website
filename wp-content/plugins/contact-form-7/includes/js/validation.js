@@ -182,7 +182,7 @@ $('#InputEmail').change(function(){
 })
 
 /*========================================       message       =======================================*/
-$('#InputMessage').keypress(function(){
+$('#InputMessage').keyup(function(){
     var valueBox = $('#InputMessage').val();
     if(valueBox.length>=10){
         $('#invalid-message-span').hide();
