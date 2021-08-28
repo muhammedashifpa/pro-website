@@ -187,7 +187,6 @@ $('#InputMessage').keydown(function(){
     if(valueBox.length>=10){
         $('#invalid-message-span').hide();
         $('#labelMessage').css("color", "var(--text-color)");
-        alert('message satisfied')
         messageState = true;
     }
 })
